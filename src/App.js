@@ -73,7 +73,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App test">
       {/* Add the "scrolled" class to Header when isScrolled is true */}
       <header className={`App-header ${isScrolled ? 'scrolled' : ''}`}>
         <Header
