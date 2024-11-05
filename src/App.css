@@ -13,26 +13,45 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .d-block{ display: block; }
+ .flex, .d-flex { display: flex; }
+
+ .container-10 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
+.App-body {
+  scroll-snap-type: y mandatory;
+  /* overflow-y: scroll; */
+}
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start; /* Optional: align section with scroll snap */
+}
+
+.main-logo {
+  width: 140px;
+  height: auto;
+}
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Basic sticky positioning */
+.App-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Additional styles when scrolled */
+.App-header.scrolled {
+  background-color: #f8f9fa; /* Change background on scroll */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
