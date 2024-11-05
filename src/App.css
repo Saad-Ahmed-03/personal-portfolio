@@ -33,10 +33,10 @@
   justify-content: center;
   scroll-snap-align: start; /* Optional: align section with scroll snap */
 }
-
 .main-logo {
-  width: 140px;
+  width: 200px;
   height: auto;
+  border-radius: 5px;
 }
 .App-link {
   color: #61dafb;
@@ -55,3 +55,47 @@
   background-color: #f8f9fa; /* Change background on scroll */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
+.main_page .bg-body-tertiary{
+  background: linear-gradient(135deg, rgba(52, 49, 47, 1), rgba(52, 49, 47, 0.8));
+}
+.navbar-nav .nav-link {
+  color: #ececec;
+  margin: 5px;
+  font-size: 22px;
+}
+.bg-attractive{
+  background: linear-gradient(135deg, rgba(52, 49, 47, 1), rgba(52, 49, 47, 0.8));
+  color: #cecece;
+}
+.App-body hr {
+  color: #cecece;
+  border: 2px solid #cecece;
+  margin: 0px;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #34312f; /* Use your preferred color */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #2e2b29; /* Slightly darker for hover effect */
+}
+
+.scroll-to-top:focus {
+  outline: none;
+}
+.fs-70{ font-size: 70px; }

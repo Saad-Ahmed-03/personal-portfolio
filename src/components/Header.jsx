@@ -1,6 +1,6 @@
 import React from 'react';
 import { Navbar, Container, Nav, Col, Row } from 'react-bootstrap';
-import MainLogo from '../logo.svg';
+import MainLogo from '../images/Saad Ahmed logo.png'
 
 export default function Header({
   scrollToSkills,

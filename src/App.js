@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './App.css';
+import './css/generic-style.css';
 import Header from './components/Header';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
@@ -9,9 +10,11 @@ import Projects from './components/Projects';
 import Blogs from './components/Blogs';
 import Footer from './components/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Intrduction from './components/Intrduction';
 
 export default function App() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showScrollTopButton, setShowScrollTopButton] = useState(false);
 
   const sectionsRef = {
     skills: useRef(null),
@@ -20,12 +23,17 @@ export default function App() {
     education: useRef(null),
     projects: useRef(null),
     blogs: useRef(null),
+    introduction: useRef(null),
   };
 
   const scrollToSection = (ref) => {
     if (ref.current) {
       ref.current.scrollIntoView({ behavior: 'smooth' });
     }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   // Set up scroll observer for hash updates
@@ -59,10 +67,11 @@ export default function App() {
     };
   }, []);
 
-  // Sticky header functionality
+  // Sticky header and scroll-to-top button functionality
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
+      setShowScrollTopButton(window.scrollY > 200); // Show button after 200px scroll
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -73,7 +82,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="App test">
+    <div className="App main_page">
       {/* Add the "scrolled" class to Header when isScrolled is true */}
       <header className={`App-header ${isScrolled ? 'scrolled' : ''}`}>
         <Header
@@ -87,29 +96,45 @@ export default function App() {
       </header>
 
       <div className="App-body">
-        <div ref={sectionsRef.skills} id="skills" className="section">
+        <section ref={sectionsRef.introduction} id='introduction' className='section bg-attractive'>
+          <Intrduction/>
+        </section>
+        <hr></hr>
+        <div ref={sectionsRef.skills} id="skills" className="section bg-attractive">
           <Skills />
         </div>
-        <div ref={sectionsRef.experience} id="work-experience" className="section">
+        <hr></hr>
+        <div ref={sectionsRef.experience} id="work-experience" className="section bg-attractive">
           <Experience />
         </div>
-        <div ref={sectionsRef.skillsRating} id="skills-rating" className="section">
+        <hr></hr>
+        <div ref={sectionsRef.skillsRating} id="skills-rating" className="section bg-attractive">
           <SkillRating />
         </div>
-        <div ref={sectionsRef.education} id="education" className="section">
+        <hr></hr>
+        <div ref={sectionsRef.education} id="education" className="section bg-attractive">
           <Education />
         </div>
-        <div ref={sectionsRef.projects} id="projects" className="section">
+        <hr></hr>
+        <div ref={sectionsRef.projects} id="projects" className="section bg-attractive">
           <Projects />
         </div>
-        <div ref={sectionsRef.blogs} id="blogs" className="section">
+        <hr></hr>
+        <div ref={sectionsRef.blogs} id="blogs" className="section bg-attractive">
           <Blogs />
         </div>
       </div>
-
-      <footer className="App-footer">
+      <hr></hr>
+      <footer className="App-footer bg-attractive">
         <Footer />
       </footer>
+
+      {/* Scroll to Top Button */}
+      {showScrollTopButton && (
+        <button onClick={scrollToTop} className="scroll-to-top">
+          ↑
+        </button>
+      )}
     </div>
   );
 }
