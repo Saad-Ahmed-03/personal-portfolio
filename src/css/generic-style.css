@@ -1,7 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Apply the font to specific elements */
 
 .cusrive-font{
     font-family: 'Dancing Script', cursive;
 }
+body, a, p, h1, h2, h3, h4, h5, h6, li{
+    font-family: "Roboto Condensed", sans-serif;
+}
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    position: relative;
+    color: #ececec;
+    font-size: 22px;
+    margin: 5px;
+
+}
+.navbar-nav .nav-link:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.navbar-nav .nav-link:hover:after {
+    width: 100%;
+    left: 0;
+}
+.navbar-nav .nav-link:hover {
+    color: #cecece;
+}
+.navbar-nav .nav-link:focus {
+    font-weight: bold;
+    border-bottom: 1px solid #cecece;
+    color: #cecece;
+}
+.d-block{ display: block; }
+ .flex, .d-flex { display: flex; }
+
+ .container-10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-body {
+  scroll-snap-type: y mandatory;
+  /* overflow-y: scroll; */
+}
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start; /* Optional: align section with scroll snap */
+}
+.main-logo {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+.App-link {
+  color: #61dafb;
+}
+
+/* Basic sticky positioning */
+.App-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Additional styles when scrolled */
+.App-header.scrolled {
+  background-color: #f8f9fa; /* Change background on scroll */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+.main_page .bg-body-tertiary{
+  background: linear-gradient(135deg, rgba(52, 49, 47, 1), rgba(52, 49, 47, 0.8));
+}
+
+.bg-attractive{
+  background: linear-gradient(135deg, rgba(52, 49, 47, 1), rgba(52, 49, 47, 0.8));
+  color: #cecece;
+}
+.App-body hr {
+  color: #cecece;
+  border: 2px solid #cecece;
+  margin: 0px;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #34312f; /* Use your preferred color */
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #2e2b29; /* Slightly darker for hover effect */
+}
+
+.scroll-to-top:focus {
+  outline: none;
+}
+.fs-70{ font-size: 70px; }

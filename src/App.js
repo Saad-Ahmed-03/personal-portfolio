@@ -100,29 +100,29 @@ export default function App() {
           <Intrduction/>
         </section>
         <hr></hr>
-        <div ref={sectionsRef.skills} id="skills" className="section bg-attractive">
+        <section ref={sectionsRef.skills} id="skills" className="section bg-attractive">
           <Skills />
-        </div>
+        </section>
         <hr></hr>
-        <div ref={sectionsRef.experience} id="work-experience" className="section bg-attractive">
+        <section ref={sectionsRef.experience} id="work-experience" className="section bg-attractive">
           <Experience />
-        </div>
+        </section>
         <hr></hr>
-        <div ref={sectionsRef.skillsRating} id="skills-rating" className="section bg-attractive">
+        <section ref={sectionsRef.skillsRating} id="skills-rating" className="section bg-attractive">
           <SkillRating />
-        </div>
+        </section>
         <hr></hr>
-        <div ref={sectionsRef.education} id="education" className="section bg-attractive">
+        <section ref={sectionsRef.education} id="education" className="section bg-attractive">
           <Education />
-        </div>
+        </section>
         <hr></hr>
-        <div ref={sectionsRef.projects} id="projects" className="section bg-attractive">
+        <section ref={sectionsRef.projects} id="projects" className="section bg-attractive">
           <Projects />
-        </div>
+        </section>
         <hr></hr>
-        <div ref={sectionsRef.blogs} id="blogs" className="section bg-attractive">
+        <section ref={sectionsRef.blogs} id="blogs" className="section bg-attractive">
           <Blogs />
-        </div>
+        </section>
       </div>
       <hr></hr>
       <footer className="App-footer bg-attractive">

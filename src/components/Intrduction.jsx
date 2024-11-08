@@ -11,7 +11,12 @@ export default function Introduction() {
             <Col xs={12} lg={8}>
                 <div className='intro text-start'>
                     <h1 className='fw-bold fs-70 cusrive-font'>Hi, I am Saad Ahmed</h1>
-                    <p className='fw-normal fs-1'>Software Engineer</p>
+                    <p className='fw-normal fs-1 mb-0'>Software Engineer | Shopify Theme & App Developer</p>
+                    <p className='fw-normal fs-1'>
+                      Passionate about creating seamless e-commerce experiences, I specialize in Shopify theme and app development, 
+                      blending technical expertise with creative problem-solving to help businesses thrive online. With a strong foundation 
+                      in front-end and back-end customization, I’m dedicated to delivering high-quality solutions tailored to each client’s unique needs.
+                    </p>
                 </div>
                 <div className="mt-3 text-start">
                 <a href="#" target="_blank" rel="noopener noreferrer" className="me-3 github">
