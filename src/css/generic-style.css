@@ -55,12 +55,19 @@ body, a, p, h1, h2, h3, h4, h5, h6, li{
   scroll-snap-type: y mandatory;
   /* overflow-y: scroll; */
 }
-.section {
+/* .section {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  scroll-snap-align: start; /* Optional: align section with scroll snap */
+  scroll-snap-align: start; /* Optional: align section with scroll snap 
+} */
+.section {
+  height: 105vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-align: start;
 }
 .main-logo {
   width: 200px;
@@ -124,3 +131,68 @@ body, a, p, h1, h2, h3, h4, h5, h6, li{
   outline: none;
 }
 .fs-70{ font-size: 70px; }
+.fs-18 { font-size: 18px; }
+
+.react-logo{ color: #087ea4; }
+
+.skills-logo {
+  width: 100px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.shopify-app{
+  width: 250px;
+}
+
+.title-header {
+  border-bottom: 2px solid;
+  margin-bottom: 40px;
+}
+.skill {
+  text-align: center;
+  width: 170px;
+}
+.skills-logo.jQuery, .skills-logo.liquid, .skills-logo.Python {
+  width: 150px;
+}
+.skill p {
+  font-size: 16px;
+}
+.swiper-button-prev:after, .swiper-button-next:after {
+  font-size: 22px !important;
+  font-weight: 700;
+}
+.swiper-button-prev, .swiper-button-next {
+  background-color: #fff;
+  color: #000 !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50px !important;
+}
+.Shopify-App.row .skill {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .Remix-js, .MongoDB, .Vercel{
+  height: 150px;
+} */
+
+.tooltip {
+  background-color: #eee !important; /* Change background color */
+  color: #000 !important; /* Change text color */
+}
+
+.tooltip-arrow:before {
+  border-top-color: #eee !important; /* Match arrow with tooltip background */
+}
+.tooltip-inner{
+  background-color: #fff !important;
+  color: #000 !important;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
