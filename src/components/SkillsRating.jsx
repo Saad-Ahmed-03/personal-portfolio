@@ -1,30 +1,3 @@
-// import React from 'react'
-// import ProgressBar from 'react-bootstrap/ProgressBar';
-
-// export default function SkillRating(){
-//   return (
-//     <>
-//     <div className="skill-rating">
-//         <div className="rating-stars">
-//             <h2> Skills Rating </h2>
-//             <div>
-//               <ProgressBar variant="success" now={20} />
-//             </div>
-//             <div>
-//               <ProgressBar variant="success" now={40} />
-//             </div>
-//             <div>
-//               <ProgressBar variant="warning" now={60} />
-//             </div>
-//             <div>
-//               <ProgressBar variant="danger" now={80} />
-//             </div>
-//         </div>
-//     </div>
-//     </>
-//   )
-// }
-
 import { CircularProgressbar } from 'react-circular-progressbar';
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
