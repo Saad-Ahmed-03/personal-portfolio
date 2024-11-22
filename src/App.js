@@ -22,7 +22,6 @@ export default function App() {
     skillsRating: useRef(null),
     education: useRef(null),
     projects: useRef(null),
-    blogs: useRef(null),
     introduction: useRef(null),
   };
 
@@ -91,7 +90,6 @@ export default function App() {
           scrollToSkillsRate={() => scrollToSection(sectionsRef.skillsRating)}
           scrollToEducate={() => scrollToSection(sectionsRef.education)}
           scrollToProject={() => scrollToSection(sectionsRef.projects)}
-          scrollToBlogs={() => scrollToSection(sectionsRef.blogs)}
         />
       </header>
 
@@ -119,12 +117,7 @@ export default function App() {
         <section ref={sectionsRef.projects} id="projects" className="section bg-attractive">
           <Projects />
         </section>
-        <hr></hr>
-        <section ref={sectionsRef.blogs} id="blogs" className="section bg-attractive">
-          <Blogs />
-        </section>
       </div>
-      <hr></hr>
       <footer className="App-footer bg-attractive">
         <Footer />
       </footer>

@@ -11,7 +11,7 @@ export default function Introduction() {
             <Col xs={12} lg={8}>
                 <div className='intro text-start'>
                     <h1 className='fw-bold fs-70 cusrive-font'>Hi, I am Saad Ahmed</h1>
-                    <p className='fw-normal fs-18 mb-0'>Software Engineer | Shopify Theme & App Developer | Python </p>
+                    <p className='fw-normal fs-18 mb-0'>Software Engineer | Shopify Theme & App | Python </p>
                     <p className='fw-normal fs-18'>
                       Passionate about creating seamless e-commerce experiences, I specialize in Shopify theme and app development, 
                       blending technical expertise with creative problem-solving to help businesses thrive online. With a strong foundation 

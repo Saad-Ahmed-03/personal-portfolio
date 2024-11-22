@@ -196,3 +196,23 @@ body, a, p, h1, h2, h3, h4, h5, h6, li{
   font-size: 1rem;
   font-weight: 700;
 }
+section#education hr, section#work-experience hr {
+  margin: 15px;
+}
+section#work-experience {
+  height: 110vh;
+}
+section#work-experience .title-header {
+  margin-bottom: 20px;
+}
+.nav-tabs .nav-link {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+}
+.nav-tabs .nav-link:hover {
+  color: #fff;
+}
+.project-item a {
+  color: #fff;
+}
