@@ -149,12 +149,16 @@ body, a, p, h1, h2, h3, h4, h5, h6, li{
 .title-header {
   border-bottom: 2px solid;
   margin-bottom: 40px;
+  text-align: left;
+}
+.education-item {
+  text-align: left;
 }
 .skill {
   text-align: center;
   width: 170px;
 }
-.skills-logo.jQuery, .skills-logo.liquid, .skills-logo.Python {
+.skills-logo.JQuery, .skills-logo.liquid, .skills-logo.Python, .skills-logo.TikTok, .skills-logo.RestAPI, .skills-logo.GraphQL, .skills-logo.Tailwind, .skills-logo.Rest {
   width: 150px;
 }
 .skill p {
@@ -171,15 +175,12 @@ body, a, p, h1, h2, h3, h4, h5, h6, li{
   height: 40px !important;
   border-radius: 50px !important;
 }
-.Shopify-App.row .skill {
+.row-ShopifyApp .skill, .row-Frontend .skill {
   height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-/* .Remix-js, .MongoDB, .Vercel{
-  height: 150px;
-} */
 
 .tooltip {
   background-color: #eee !important; /* Change background color */
